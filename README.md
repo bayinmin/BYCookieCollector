@@ -7,6 +7,8 @@ This script help to collect target cookie and output to a file.
 
 Example
 =======
+The following example shows how to retrieve 10 JSESSIONID from WebGoat landing page hosted locally. The 10 session id retrieved were written into collected_cookies.txt. 
+
 ![Hello](https://github.com/bayinmin/BYResources/blob/master/BYCookieCollector/pic-bycookiecollector-usage.png)
 
 
