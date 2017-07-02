@@ -14,9 +14,6 @@ def show_usage_and_exit():
 
 
 def main(argv):
-    if not (len(argv) == 3 and type(argv[2]) == int):
-        show_usage_and_exit()
-
     target_url = argv[index_url]
     target_cookie = argv[index_cookie_name]
     target_cookie_count = int(argv[index_cookie_count])
@@ -46,5 +43,12 @@ def retrieve_cookies(url,cname):
             f.write(cookie.value + "\n")
 
 if __name__ == "__main__":
-    main(sys.argv)
+    if len(sys.argv) != 4:
+        show_usage_and_exit()    
+    try:
+        int(sys.argv[3])
+    except:
+        show_usage_and_exit()
+        
+    main(sys.argv[1:4])
 
