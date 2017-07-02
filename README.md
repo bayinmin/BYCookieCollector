@@ -13,7 +13,7 @@ Example
 Usage
 =====
 1. Open command prompt and navigate to bycc-index.py folder
-2. Run the script with the following format --> python bycc-index.py <url> <cookie name> <cookie count>
+2. Run the script with the following format --> python bycc-index.py \<url\> \<cookie name\> \<cookie count\>
 3. Check the output file for collected cookies
 
 
